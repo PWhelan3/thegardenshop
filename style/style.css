@@ -1,0 +1,246 @@
+/*  */
+/* STYLES FOR ALL PAGES */
+/*  */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+    overflow-x: hidden;
+}
+
+
+
+/* */
+/* STYLES FOR HOME PAGE */
+/*  */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    perspective: 500px;
+    transform-style: preserve-3d;
+}
+
+/* Parallax Header Section */
+.parallax-header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background Image with Parallax Effect */
+#backgroundImgContainer {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+#backgroundImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateZ(-1px) scale(2);
+    position: absolute;
+    filter: blur(4px);
+}
+
+/* Logo with Parallax Effect */
+#logoSmall {
+    width: 20%;
+    min-height: 15vh;
+    position: relative;
+    z-index: 2;
+    transform: translateZ(0.5px) scale(1.5);
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #2e7d32;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #155724;
+    border-radius: 4px;
+}
+
+/* About Section */
+.about {
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    padding: 1%;
+}
+
+
+
+
+/* */
+/* STYLES FOR CONTACT PAGE */
+/*  */
+
+.contact-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1, .contact-form h2, .contact-info h2, .map h2, .hours h2 {
+    color: #2e7d32;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    padding: 10px;
+    color: white;
+    background-color: #2e7d32;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-info p, .hours p, footer p {
+    margin: 5px 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+    margin-top: 10px;
+}
+
+footer a {
+    color: #2e7d32;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+footer a:hover {
+    color: #155724;
+}
+
+
+
+
+
+
+/*  */
+/* STYLES FOR PLANT PAGE */
+/*  */
+
+h1 {
+    text-align: center;
+    color: #2e7d32; /* Garden-themed green */
+}
+
+/* Plant grid layout */
+.plant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Plant card styling */
+.plant-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.plant-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image styling within plant card */
+.plant-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Plant info styling */
+.plant-info {
+    padding: 15px;
+}
+
+.plant-info h6 {
+    font-size: 1.1em;
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.plant-info p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+/* Price and availability styling */
+.price {
+    font-weight: bold;
+    color: #333;
+}
+
+.availability {
+    font-size: 0.9em;
+    color: #2e7d32;
+}
+
+.availability.out-of-stock {
+    color: #d9534f; /* Red color for "Out of Stock" */
+}
