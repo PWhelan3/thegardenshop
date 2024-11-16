@@ -24,15 +24,3 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('about-section').textContent = 'Failed to load about section.';
         });
 });
-
-
-// Parallax Scrolling Effect for Both Directions
-window.addEventListener('scroll', function () {
-    const scrollY = window.scrollY; // Current vertical scroll position
-    const background = document.querySelector('#backgroundImg');
-    const logo = document.querySelector('#logoSmall');
-
-    // Adjust movement speeds for parallax
-    background.style.transform = `translateY(${scrollY * 0.3}px) scale(2)`; // Moves slower
-    logo.style.transform = `translateY(${scrollY * 2}px) scale(1.4)`; // Moves slower than background
-});

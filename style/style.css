@@ -7,74 +7,19 @@ html, body {
     padding: 0;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #333;
+    background-color: #86a68b;
     overflow-x: hidden;
+    justify-items: center;
 }
 
-
-
-/* */
-/* STYLES FOR HOME PAGE */
-/*  */
-
-body {
-    width: 100vw;
-    height: 100vh;
-    overflow-y: scroll;
-    perspective: 500px;
-    transform-style: preserve-3d;
+h1 {
+    text-align: center;
+    color: #2e7d32; /* Garden-themed green */
 }
-
-/* Parallax Header Section */
-.parallax-header {
-    position: relative;
-    height: 100vh; /* Full viewport height */
-    /* overflow: hidden; Prevent elements from spilling outside */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    perspective: 1px; /* Necessary for the parallax effect */
-    transform-style: preserve-3d;
-}
-
-/* Background Image with Parallax Effect */
-#backgroundImgContainer {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    height: 90vh;
-    overflow: hidden;
-}
-
-#backgroundImg {
-    width: 75%;
-    height: 75%;
-    object-fit: contain;
-    position: absolute;
-    transform: translateZ(-1px) scale(2); /* Moves the background further away */
-    will-change: transform; /* Optimizes performance for animations */
-}
-
-/* Logo with Parallax Effect */
-#logoSmall {
-    width: 20%;
-    position: relative;
-    z-index: 2; /* Keep above the background */
-    transform: translateZ(0.5px) scale(1.2); /* Moves the logo closer */
-    will-change: transform;
-}
-
-#logoSmall{
-
-}
-
-
 
 /* Navbar styling */
 .navbar {
-    background-color: #2e7d32;
+    background-color: transparent;
     padding: 10px 20px;
     display: flex;
     justify-content: center;
@@ -103,15 +48,51 @@ body {
     border-radius: 4px;
 }
 
-/* About Section */
-.about {
-    padding: 20px;
-    text-align: center;
+p {
+    padding: 0.25%;
 }
 
-p {
-    padding: 1%;
+
+/* */
+/* STYLES FOR HOME PAGE */
+/*  */
+
+.featured-sec {
+    background-color: rgb(127, 166, 122);
+    padding: 5%;
+    margin: 5%;
+    width: 80%;
+    height: 100vh;
 }
+
+.about-sec {
+    background-color: rgb(127, 166, 122);
+    width: 80%;
+    height: 100vh;
+    padding: 5%;
+    margin: 5%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.newsletter-sec {
+    background-color: rgb(127, 166, 122);
+    padding: 5%;
+    margin: 5%;
+    width: 80%;
+    height: 50vh;
+}
+
+.footer-sec {
+    background-color: rgb(127, 166, 122);
+    padding: 5%;
+    margin: 5%;
+    width: 80%;
+    height: 20vh;
+}
+
 
 
 
@@ -189,10 +170,6 @@ footer a:hover {
 /* STYLES FOR PLANT PAGE */
 /*  */
 
-h1 {
-    text-align: center;
-    color: #2e7d32; /* Garden-themed green */
-}
 
 /* Plant grid layout */
 .plant-grid {
@@ -228,7 +205,8 @@ h1 {
 }
 
 .plant-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    transform: scale(1.1);
 }
 
 /* Image styling within plant card */
